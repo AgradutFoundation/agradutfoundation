@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --themeRed: #e43a47;
+    --gray: #aca6a6;
+}
+button,
+body {
+    font-family: "Poppins" , sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fullContainer {
+    width: 100%;
+}
+
+.container{
+    width: 1140px;
+    margin: auto;
+}
+
+.section{
+    width: 300px;
+    border-bottom: 3px solid;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 200;
+    margin: 0 auto 60px;
+    margin-top: 60px;
+    position: relative;
+    padding: 1opx 0;
+    text-transform: uppercase;
+}
+
+
+header {
+    width: 100%;
+    background-color: rgba(93, 93, 99, 0.936);
+    position: fixed;
+    z-index: 2;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container .logo {
+    padding: 10px 0;
+    height: 0px;
+}
+
+header .container .logo img{
+    height: 100%;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+}
+
+header nav ul li a{
+    display: inline-block;
+    height: 75px;
+    line-height: 75px;
+    border-radius: 9px;
+    padding: 0 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: rgb(246, 248, 249);
+    transition: o.3s;
+}
+
+header nav ul li a:hover{
+    background-color: var(--themeRed);
+}
+
+.banner {
+    min-height: 100vh;
+    width:100%;
+    background-image : url("banner.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner h1 {
+    margin-top: 230px;
+    margin-left: 50px;
+    display: inline-block;
+    font-size: 3.0rem;
+    color: #fdfcfc;
+    text-shadow: 0 0 8px #060505;
+    width: 40%;
+    line-height: 4.2rem;
+    font-weight: 300;
+}
+
+.banner h1 span{
+    background-color: var(--themeRed);
+    display: inline-block;
+    line-height: 3.5rem;
+    padding: 0 15px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.banner p {
+    color: #f7f2f2;
+    width: 50%;
+    text-shadow: 0 0 10px #0a0606;
+    margin-top: 40px;
+    margin-left: 50px;
+    font-size: 1.3rem;
+}
+
+.banner button{
+    background-color: var(--themeRed);
+    border: 0;
+    outline: none;
+    color: #fff;
+    padding: 10px 15px;
+    margin-top: 40px;
+    font-size: 18px;
+    border-radius: 3px;
+    font-weight: 600;
+    margin-left: 50px;
+}
+
+
+#aboutSection .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 100px;
+    position: relative;
+    height: 345px;
+}
+
+#aboutSection .cards > div {
+    width: 350px;
+    background-color: var(--gray);
+    padding: 35px;
+    color: #3c3535;
+    text-align: center;
+    border-radius: 15px;
+    text-decoration: none;
+    height: 215px;
+    border: 1px solid #faf8f8;
+    transition: 0.4s;
+}
+
+#aboutSection .cards > div:hover{
+    width: 400px;
+    margin-top: -20px;
+    border-color: var(--themeRed);
+    text-decoration: none;
+    padding: 55px;
+    height: 250px;
+}
+
+#aboutSection .cards > div .title{
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#aboutSection .cards > div p{
+    font-size: 14px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+#aboutSection .cards > div button{
+    border: 1px solid var(--themeRed);
+    outline: none;
+    padding: 7px 15px;
+    margin-top: 15px;
+    font-size: 12px;
+    border-radius: 3px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#aboutSection .cards > div:hover button{
+    background-color: var(--themeRed);
+    text-decoration: none;
+    color: #fff;
+}
+
+.prpgrams{
+    background-color: #e2e2e2;
+}
+
+.scholarshipBox > div a button{
+    text-decoration: none;
+}
